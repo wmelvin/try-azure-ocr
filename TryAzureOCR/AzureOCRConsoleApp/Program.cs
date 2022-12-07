@@ -17,8 +17,8 @@ namespace AzureOCRConsoleApp
             string imagesHome = "T:\\Temp\\CopyOf_2019_CellarFloodBooks";
             string fileName = Path.Combine(
                 imagesHome, 
-                "prep_images_output\\grayscale", 
-                "IMG_0638-grayscale.jpg");
+                "prep_images_output\\grayscale",
+                "IMG_0641-grayscale.jpg");
 
             var program = new Program();
 
@@ -27,7 +27,7 @@ namespace AzureOCRConsoleApp
 
         private async Task ProcessImage(Settings settings, string fileName, DocumentAnalysisClient client)
         {
-            Console.WriteLine($"Reading: {fileName}");
+            Console.WriteLine($"Reading '{fileName}'");
 
             //using var stream = new FileStream(fileName, FileMode.Open, FileAccess.Read);
             using FileStream stream = File.OpenRead(fileName);
@@ -39,7 +39,7 @@ namespace AzureOCRConsoleApp
 
             string outFileName = Path.Combine(dirName, Path.ChangeExtension(Path.GetFileName(fileName), ".ocr.txt"));
 
-            Console.WriteLine($"Writing: {outFileName}");
+            Console.WriteLine($"Writing '{outFileName}'");
 
             using (FileStream outStream = File.Create(outFileName))
             using (TextWriter writer = new StreamWriter(outStream))
