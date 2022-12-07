@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureOCRConsoleApp", "AzureOCRConsoleApp\AzureOCRConsoleApp.csproj", "{4BEC3C22-7DB9-4B17-A487-9DCAC878453B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BEC3C22-7DB9-4B17-A487-9DCAC878453B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BEC3C22-7DB9-4B17-A487-9DCAC878453B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BEC3C22-7DB9-4B17-A487-9DCAC878453B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BEC3C22-7DB9-4B17-A487-9DCAC878453B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B31F534-1477-4176-BE98-C2267EEE01A6}
+	EndGlobalSection
+EndGlobal
