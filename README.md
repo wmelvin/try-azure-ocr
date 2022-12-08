@@ -66,7 +66,7 @@ Produced this result:
     Microsoft Press
 ```
 
-This back-cover image:
+This (out-of-focus) back-cover image:
 
 ![Example of book back cover image](./readme_images/IMG_0639-grayscale-h600.jpg)
 
