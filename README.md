@@ -45,7 +45,8 @@ This front-cover image:
 
 Produced this result:
 
->   Solution Developer Series
+```plain text
+    Solution Developer Series
     Covers
     Version 5.0
     of Microsi.
@@ -63,6 +64,7 @@ Produced this result:
     Access using Jet,
     ODBC, and VESOY
     Microsoft Press
+```
 
 This back-cover image:
 
@@ -70,7 +72,8 @@ This back-cover image:
 
 Produced this result:
 
->   The hottest guide over to data 866664
+```plain text
+    The hottest guide over to data 866664
     with Microsoft Visual Basic 5.0 and
     Microsoft SQL Server 05.
     Miomsoft Houal Basic
@@ -88,6 +91,7 @@ Produced this result:
     S. Server than anyone in die
     motif ar Douglas Adams
     Microsoft Press
+```
 
 ---
 
