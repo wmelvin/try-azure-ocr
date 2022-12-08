@@ -18,7 +18,7 @@ namespace AzureOCRConsoleApp
             string fileName = Path.Combine(
                 imagesHome, 
                 "prep_images_output\\grayscale",
-                "IMG_0641-grayscale.jpg");
+                "IMG_0642-grayscale.jpg");
 
             var program = new Program();
 
@@ -29,12 +29,10 @@ namespace AzureOCRConsoleApp
         {
             Console.WriteLine($"Reading '{fileName}'");
 
-            //using var stream = new FileStream(fileName, FileMode.Open, FileAccess.Read);
             using FileStream stream = File.OpenRead(fileName);
 
             AnalyzeDocumentOperation op = await client.AnalyzeDocumentAsync(WaitUntil.Completed, "prebuilt-read", stream);
 
-            //string dirName = Path.GetDirectoryName(fileName) ?? Directory.GetCurrentDirectory();
             string dirName = Path.GetDirectoryName(fileName) ?? AppDomain.CurrentDomain.BaseDirectory;
 
             string outFileName = Path.Combine(dirName, Path.ChangeExtension(Path.GetFileName(fileName), ".ocr.txt"));
