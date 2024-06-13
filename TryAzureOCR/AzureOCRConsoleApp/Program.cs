@@ -14,11 +14,32 @@ namespace AzureOCRConsoleApp
             DocumentAnalysisClient client = new DocumentAnalysisClient(
                 new Uri(settings.Endpoint), cred);
 
-            string imagesHome = "T:\\Temp\\CopyOf_2019_CellarFloodBooks";
+            // W: = {devflux}
+            string imagesHome = "W:\\CopyOf_2019_CellarFloodBooks";
+
+            // Though it would be easy to loop through all the files in
+            // the directory, I want to keep it one-at-a-time for now
+            // since this is an exploration, not production.
+
+            /*
+
+            // Original color photo.
             string fileName = Path.Combine(
-                imagesHome, 
+                imagesHome,
+                "IMG_0646.JPG");
+
+            // Grayscale version.
+            string fileName = Path.Combine(
+                imagesHome,
                 "prep_images_output\\grayscale",
-                "IMG_0642-grayscale.jpg");
+                "IMG_0646-grayscale.jpg");
+            */
+
+            // Color photo, sharpened.
+            string fileName = Path.Combine(
+                imagesHome,
+                "prep_images_output\\color",
+                "IMG_0646-sharpen.jpg");
 
             var program = new Program();
 
